@@ -2,7 +2,7 @@ import React from "react";
 import NewsCard from "./newsCard";
 import Loader from "./loader";
 
-const DataView = ({ newsData, loading }) => {
+const DataView = ({ newsData = [], loading }) => {
   return (
     <div className="overscroll-y-none overscroll-x-none min-h-screen w-full bg-slate-100 p-4  shadow-md">
       <div className="text-xl font-bold">

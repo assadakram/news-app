@@ -90,7 +90,7 @@ const SearchFilter = ({
             className="mb-2 p-4 border border-gray-300 rounded-md bg-transparent text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent hover:border-blue-500"
           >
             <option value="">Select Category</option>
-            {categories.map((category) => (
+            {categories?.map((category) => (
               <option key={category} value={category}>
                 {category}
               </option>
@@ -105,7 +105,7 @@ const SearchFilter = ({
             className="mb-2 p-4 border border-gray-300 rounded-md bg-transparent text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent hover:border-blue-500"
           >
             <option value="">Select Source</option>
-            {sources.map((source) => (
+            {sources?.map((source) => (
               <option key={source} value={source}>
                 {source}
               </option>

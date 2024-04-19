@@ -8,7 +8,13 @@ Make sure you have Docker installed on your machine.
 
 ## Getting Started
 
-1. Build the Docker image:
+1. Run the Docker container in development environment:
+
+```bash
+ docker-compose up
+```
+
+For the build the Docker image:
 
 ```bash
  docker build -t nextjs_docker:dev .
@@ -20,12 +26,6 @@ Run the Docker container:
 
    ```bash
     docker run --publish 3000:3000 nextjs_docker:dev
-   ```
-
-Run the Docker container in development environment:
-
-   ```bash
-    docker-compose up
    ```
 
 This command will start the Next.js development server inside the Docker container and map port 3000 of the container to port 3000 on your local machine.

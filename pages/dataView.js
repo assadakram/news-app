@@ -4,33 +4,34 @@ import Loader from "./loader";
 
 const DataView = ({ newsData = [], loading }) => {
   return (
-    <div className="overscroll-y-none overscroll-x-none min-h-screen w-full bg-slate-100 p-4  shadow-md">
-      <div className="text-xl font-bold">
-        <h1 className="mb-4">News Articles</h1>
+    <div className="flex flex-col min-h-screen bg-slate-100 p-4 shadow-md overflow-hidden">
+      <div className="text-xl font-bold mb-4">
+        <h1>News Articles</h1>
       </div>
 
-      {loading ? (
-        <Loader />
-      ) : newsData.length > 0 ? (
-        <div className="overscroll-x-auto">
-          {newsData.map((article, index) => {
-            const { title, description, url, urlToImage } = article;
-            return (
+      <div className="flex-1 overflow-y-auto">
+        {loading ? (
+          <div className="flex justify-center items-center h-full">
+            <Loader />
+          </div>
+        ) : newsData.length > 0 ? (
+            <div>
+              {newsData.map((article, index) => (
               <NewsCard
                 key={index}
-                title={title}
-                description={description}
-                url={url}
-                urlToImage={urlToImage}
+                  title={article.title}
+                  description={article.description}
+                  url={article.url}
+                  urlToImage={article.urlToImage}
               />
-            );
-          })}
-        </div>
-      ) : (
-        <div className="text-gray-600 text-center mt-8">
-          No news articles found.
-        </div>
-      )}
+              ))}
+          </div>
+        ) : (
+          <div className="text-gray-600 text-center mt-8">
+            No news articles found.
+          </div>
+        )}
+      </div>
     </div>
   );
 };

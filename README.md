@@ -44,4 +44,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Live Demo
 
-[Live vercel link](https://news-app-git-master-assad-akrams-projects-237fffa6.vercel.app/)
+[Live vercel link](https://news-app-as-silk-two.vercel.app/)

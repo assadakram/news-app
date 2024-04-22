@@ -32,7 +32,7 @@ Run the Docker container:
 
 This command will start the Next.js server from Docker build Image and map it to port 3000.
 
-Access the application
+Access the application:
 
 2. Once the container is running, open your web browser and navigate to [localhost](http://localhost:3000) to view the Next.js application.
 

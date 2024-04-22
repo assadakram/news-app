@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
-import SearchFilter from "./searchFilter";
-import DataView from "./dataView";
-import SearchBar from "./topBar";
+import SearchFilter from "../components/searchFilter";
+import DataView from "../components/dataView";
+import SearchBar from "../components/topBar";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Home() {
